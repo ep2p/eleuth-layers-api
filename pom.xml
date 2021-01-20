@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.github.ep2p</groupId>
 	<artifactId>layers-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>Eleuth Layers API</name>
 	<description>Eleuth p2p Node | Layers API</description>
 	<packaging>pom</packaging>
