@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Eleuth Layers API</name>
 	<description>Eleuth p2p Node | Layers API</description>
-
+	<packaging>pom</packaging>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
