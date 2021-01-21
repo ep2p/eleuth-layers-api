@@ -18,6 +18,12 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.16</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
 			<groupId>com.github.ep2p</groupId>
 			<artifactId>data-model</artifactId>
 			<version>${eleuth.common.version}</version>
