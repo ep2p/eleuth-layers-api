@@ -11,7 +11,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public interface RequestSenderApi {
-    <Q, B, RB> void sendRequest(BigInteger nodeId, Request<Q, B> request, ResponseListener<RB> responseListener, Class<RB> rbClass);
     <Q, B, RB> void sendRequest(BigInteger nodeId, ConnectionInfo connectionInfo, Request<Q, B> request, ResponseListener<RB> responseListener, Class<RB> rbClass);
 
     interface ResponseListener<RB> {
