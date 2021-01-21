@@ -19,7 +19,11 @@
 	</properties>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>com.github.ep2p</groupId>
+			<artifactId>data-model</artifactId>
+			<version>0.0.2-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<repositories>
