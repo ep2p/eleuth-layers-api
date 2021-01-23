@@ -38,6 +38,12 @@ public interface RequestSenderApi {
         private B body;
         @Builder.Default
         private Map<String, String> headers = new HashMap<>();
+
+        public static <Q,B> RequestBuilder<Q,B> endpoint(Endpoint endpoint){
+            return Request.<Q,B>builder()
+                    .address(endpoint.address)
+                    .method(endpoint.method);
+        }
     }
 
     enum Method {
