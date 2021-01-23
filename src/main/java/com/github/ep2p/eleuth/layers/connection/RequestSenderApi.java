@@ -43,4 +43,24 @@ public interface RequestSenderApi {
     enum Method {
         GET, POST, FETCH, PUT, PATCH, DELETE
     }
+
+    @Getter
+    enum Endpoint {
+        RING_PINT("/ring/ping", Method.PUT),
+        RING_SHUTDOWN_SIG("/ring/shutdown-signal", Method.POST),
+        RING_FIND("/ring/find", Method.POST),
+        RING_STORE("/ring/store", Method.POST),
+        RING_GET("/ring/get", Method.POST),
+        RING_GET_RESULT("/ring/get/result", Method.POST),
+        RING_STORE_RESULT("/ring/store/result", Method.POST),
+
+        ;
+        private final String address;
+        private final Method method;
+
+        Endpoint(String address, Method method) {
+            this.address = address;
+            this.method = method;
+        }
+    }
 }
