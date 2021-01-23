@@ -52,7 +52,7 @@ public interface RequestSenderApi {
 
     @Getter
     enum Endpoint {
-        RING_PINT("/ring/ping", Method.PUT),
+        RING_PING("/ring/ping", Method.PUT),
         RING_SHUTDOWN_SIG("/ring/shutdown-signal", Method.POST),
         RING_FIND("/ring/find", Method.POST),
         RING_STORE("/ring/store", Method.POST),
