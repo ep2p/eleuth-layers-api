@@ -30,9 +30,8 @@ public interface MessageSignatureApi {
     <E extends Serializable> SignedData<E> sign(E input, PrivateKey privateKey, PublicKey publicKey);
     <E extends Serializable> SignedData<E> sign(E input, boolean includePublicKey);
     <E extends Serializable> void validate(SignedData<E> signedData) throws InvalidSignatureException;
-    <E extends Serializable> void validate(SignedData<E> signedData, String publicKey);
-    <E extends Serializable> void validate(SignedData<E> signedData, PublicKey publicKey);
+    <E extends Serializable> void validate(SignedData<E> signedData, String publicKey) throws InvalidSignatureException;
+    <E extends Serializable> void validate(SignedData<E> signedData, PublicKey publicKey) throws InvalidSignatureException;
     PublicKey getPublicKey(SignedData<?> signedData);
     PublicKey getPublicKey(String encoded);
-    <E extends Serializable> byte[] getSerializedValue(E input);
 }
