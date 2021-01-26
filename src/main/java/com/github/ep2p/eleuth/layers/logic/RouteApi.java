@@ -8,7 +8,6 @@ import com.github.ep2p.eleuth.model.route.DataMessage;
 import java.math.BigInteger;
 
 public interface RouteApi {
-    BaseResponse onAvailabilityMessage(BigInteger route, AvailabilityMessage availabilityMessage);
-    BaseResponse onAvailabilityReply(BigInteger route, AvailabilityReply availabilityReply);
+    AvailabilityReply onAvailabilityMessage(BigInteger route, AvailabilityMessage availabilityMessage);
     BaseResponse onDataMessage(BigInteger route, DataMessage dataMessage);
 }
