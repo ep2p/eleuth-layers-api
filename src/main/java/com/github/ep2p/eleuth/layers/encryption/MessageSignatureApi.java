@@ -27,6 +27,7 @@ public interface MessageSignatureApi {
 
     <E extends Serializable> SignedData<E> signWithCertificate(E input);
     <E extends Serializable> SignedData<E> sign(E input, String privateKey, String publicKey);
+    <E extends Serializable> void sign(SignedData<E> unSignedData);
     <E extends Serializable> SignedData<E> sign(E input, PrivateKey privateKey, PublicKey publicKey);
     <E extends Serializable> SignedData<E> sign(E input, boolean includePublicKey);
     <E extends Serializable> void validate(SignedData<E> signedData) throws InvalidSignatureException;
