@@ -60,7 +60,8 @@ public interface RequestSenderApi {
         RING_GET_RESULT("/ring/get/result", Method.POST),
         RING_STORE_RESULT("/ring/store/result", Method.POST),
 
-        ROUTE_REQ_AV("/route/request/availability", Method.POST)
+        ROUTE_REQ_AV("/route/request/availability", Method.POST),
+        ROUTE_REQ_DD("/route/request/data", Method.POST)
         ;
         private final String address;
         private final Method method;
