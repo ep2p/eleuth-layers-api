@@ -7,4 +7,5 @@ import java.math.BigInteger;
 public interface AvailabilityRepositoryApi {
     void available(Availability availability);
     Availability getAvailableRoutes(BigInteger nodeId);
+    boolean contains(BigInteger nodeId);
 }
