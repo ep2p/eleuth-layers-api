@@ -1,8 +1,10 @@
 package com.github.ep2p.eleuth.layers.repository;
 
+import com.github.ep2p.eleuth.model.entity.Availability;
+
 import java.math.BigInteger;
-import java.util.List;
 
 public interface AvailabilityRepositoryApi {
-    void available(BigInteger nodeId, List<BigInteger> routeId);
+    void available(Availability availability);
+    Availability getAvailableRoutes(BigInteger nodeId);
 }
