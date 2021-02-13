@@ -7,6 +7,8 @@ import java.util.Date;
 import java.util.List;
 
 public interface MessageRepositoryApi {
+    void save(Message message);
+    boolean containsByNode(BigInteger node);
     List<Message> getMessagesForNode(BigInteger node);
     List<Message> getMessagesForNode(BigInteger node, Date after);
     Message getMessage(BigInteger messageId);
