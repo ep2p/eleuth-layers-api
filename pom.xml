@@ -5,7 +5,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<eleuth.common.version>0.0.4-SNAPSHOT</eleuth.common.version>
+		<eleuth.common.version>0.0.5-SNAPSHOT</eleuth.common.version>
 	</properties>
 
 	<groupId>com.github.ep2p</groupId>
