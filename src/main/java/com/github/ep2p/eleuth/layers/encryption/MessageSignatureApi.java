@@ -24,7 +24,7 @@ public interface MessageSignatureApi {
             super(message, cause, enableSuppression, writableStackTrace);
         }
     }
-
+    <E extends Serializable> SignedData<E> signWithCertificate(E input, boolean includePublicKey);
     <E extends Serializable> SignedData<E> signWithCertificate(E input);
     <E extends Serializable> SignedData<E> sign(E input, String privateKey, String publicKey);
     <E extends Serializable> void sign(SignedData<E> unSignedData);
